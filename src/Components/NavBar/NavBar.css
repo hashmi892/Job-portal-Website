@@ -1,0 +1,11 @@
+.menuList {
+  transition: all 0.5s ease-in-out;
+  background-image: url(../../assets/Images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.menuList.close {
+  right: -100%;
+  transition: all 0.5s ease-in-out;
+}

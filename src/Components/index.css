@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+  .box-center {
+    @apply absolute top-2/4 left-2/4 transform -translate-x-1/2 -translate-y-1/2;
+  }
+  .inputCss {
+    @apply flex bg-halfWhite items-center gap-2 px-2  text-[20px] rounded-lg;
+  }
+  .grayBgBtn {
+    @apply text-[#eee] font-semibold bg-slate-gray w-24 h-10 max-Xs:w-full rounded-full flex justify-center items-center cursor-pointer;
+  }
+  .purpleBgBtn {
+    @apply text-white bg-mainColor w-24 h-10 max-Xs:w-full rounded-full flex justify-center items-center font-semibold  cursor-pointer;
+  }
+}
