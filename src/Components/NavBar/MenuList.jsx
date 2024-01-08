@@ -8,11 +8,11 @@ export const MenuList = [
     url: "/About",
   },
   {
-    title: "Key Features",
+    title: "Contact Us",
     url: "/features",
   },
   {
-    title: "Contact Us",
+    title: "Blog",
     url: "/Contact",
   },
   {
