@@ -32,7 +32,7 @@ const LoginSignUp = () => {
               <input
                 type="text"
                 name="uname"
-                className="bg-transparent w-full h-full py-3 focus:border-none focus:outline-none "
+                className="bg-transparent w-full h-full py-3 border-none  outline-none focus:border-none focus:outline-none "
                 placeholder="Name"
               />
             </div>

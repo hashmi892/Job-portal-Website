@@ -9,11 +9,11 @@ export const MenuList = [
   },
   {
     title: "Contact Us",
-    url: "/features",
+    url: "/Contact",
   },
   {
     title: "Blog",
-    url: "/Contact",
+    url: "/Blog",
   },
   {
     title: "Find Jobs",

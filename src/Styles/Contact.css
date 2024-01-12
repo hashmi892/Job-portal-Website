@@ -1,0 +1,28 @@
+.contact-form input[type=text], .contact-form input[type=email]{
+  border: 1px solid #797979;
+  width: 290px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.subject input[type=text]{
+    width: 100%;
+}
+.contact-form input:focus{
+    outline: none;
+    border: 1px solid #797979;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #797979;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 1200px) {
+    .contact-form input[type=text], .contact-form input[type=email]{
+    width: 100%;
+   }
+   .subject input{
+    width: 100%;
+}
+  }

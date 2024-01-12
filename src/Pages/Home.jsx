@@ -2,6 +2,8 @@ import React from "react";
 import "../Styles/Home.css";
 import FindJobs from "./FindJobs";
 import About from "./About";
+import ContactUs from "./ContactUs";
+import Footer from "./Footer";
 const Home = () => {
   return (
     <>
@@ -20,6 +22,8 @@ const Home = () => {
       </div>
       <FindJobs />
       <About />
+      <ContactUs />
+      <Footer/>
     </>
   );
 };

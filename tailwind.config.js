@@ -6,12 +6,14 @@ export default {
       screens: {
         ml: "1200px",
         Xs: "340px",
+        ms:"876px",
       },
       fontFamily: {
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
+        mediumBlack:"#1c2331",
         halfWhite: "#eaeaea",
         mainColor: "#3c009d",
         "slate-gray": "#797979",

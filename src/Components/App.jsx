@@ -5,7 +5,7 @@ import About from "../Pages/About";
 import Home from "../Pages/Home";
 import ContactUs from "../Pages/ContactUs";
 import FindJobs from "../Pages/FindJobs";
-import KeyFeatures from "../Pages/KeyFeatures";
+import Blog from "../Pages/Blog";
 import LoginSignUp from "../Pages/LoginSignUp";
 const App = () => {
   return (
@@ -15,10 +15,10 @@ const App = () => {
           <NavBar />
           <Routes>
             <Route exact path="/" Component={Home} />
-            <Route exact path="/findJobs" Component={FindJobs} />
             <Route exact path="/About" Component={About} />
-            <Route exact path="/features" Component={KeyFeatures} />
             <Route exact path="/Contact" Component={ContactUs} />
+            <Route exact path="/Blog" Component={Blog} /> 
+            <Route exact path="/findJobs" Component={FindJobs} />
             <Route exact path="/LoginSignup" Component={LoginSignUp} />
           </Routes>
         </Router>
