@@ -64,6 +64,14 @@ const JobCard = ({ data }) => {
             </h3>
           </div>
 
+          {/* Job Remote or Not */}
+          <div className="RequirementType">
+            <span className="font-bold">Job Remote: </span>
+            <h3 className=" text-mainColor font-semibold inline">
+              {element.job_is_remote ? " Yes" : " No"}
+            </h3>
+          </div>
+
           {/* Apply button */}
           <a className="Apply_btn" href={element.job_apply_link}>
             <button

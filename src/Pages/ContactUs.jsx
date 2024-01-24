@@ -12,7 +12,7 @@ const ContactUs = () => {
         </h1>
         <div className="flex justify-between items-center max-ms:flex-col max-ms:gap-3  ">
           <div className="flex gap-3 justify-between items-center bg-pale-blue px-8 py-3 max-ms:w-full">
-            <div className="bg-white p-2 rounded-md text-mainColor">
+            <div className="contact-icon bg-white p-2 rounded-md text-BtnBg1 hover:text-mainColor">
               <MdLocationOn />
             </div>
             <div>
@@ -20,7 +20,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="flex gap-3 justify-between items-center bg-pale-blue px-8 py-3 max-ms:w-full">
-            <div className="bg-white p-2 rounded-md text-mainColor">
+            <div className="contact-icon bg-white p-2 rounded-md text-BtnBg1 hover:text-mainColor">
               <MdEmail />
             </div>
             <div>
@@ -28,7 +28,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="flex gap-3 justify-between items-center bg-pale-blue px-8 py-3 max-ms:w-full">
-            <div className="bg-white p-2 rounded-md text-mainColor">
+            <div className="contact-icon bg-white p-2 rounded-md text-BtnBg1 hover:text-mainColor">
               <FaPhoneAlt />
             </div>
             <div>
@@ -48,16 +48,34 @@ const ContactUs = () => {
             ></iframe>
           </div>
           <div className="max-ml:max-w-[100%]">
-            <p className="text-[20px]">Drop us a message; we're here to help you navigate your career path smoothly.</p>
-            <div className="mt-6 contact-form"> 
+            <p className="text-[20px]">
+              Drop us a message; we're here to help you navigate your career
+              path smoothly.
+            </p>
+            <div className="mt-6 contact-form">
               <form action="" method="post">
                 <div className="flex justify-between gap-3 max-ml:flex-col">
-                  <input type="text" name="uname" placeholder="Your name"  />
+                  <input type="text" name="uname" placeholder="Your name" />
                   <input type="email" name="email" placeholder="Your email" />
                 </div>
-                <div className="subject mt-4"> <input type="text" name="subject" placeholder="subject"/></div>
-                <textarea name="message"  cols="70" rows="10" placeholder="message" className="mt-4 border focus:outline-none p-2"></textarea> 
-                <div><input type="submit" value="Send Message" className="w-full text-center bg-mainColor text-white py-3 my-3"/></div>
+                <div className="subject mt-4">
+                  {" "}
+                  <input type="text" name="subject" placeholder="subject" />
+                </div>
+                <textarea
+                  name="message"
+                  cols="70"
+                  rows="10"
+                  placeholder="message"
+                  className="mt-4 border focus:outline-none p-2"
+                ></textarea>
+                <div>
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    className="submitBtn w-full text-center bg-BtnBg1 hover:bg-mainColor rounded-md text-white py-3 my-3"
+                  />
+                </div>
               </form>
             </div>
           </div>

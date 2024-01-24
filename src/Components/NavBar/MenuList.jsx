@@ -12,10 +12,6 @@ export const MenuList = [
     url: "/Contact",
   },
   {
-    title: "Blog",
-    url: "/Blog",
-  },
-  {
     title: "Find Jobs",
     url: "/findJobs",
   },
@@ -23,7 +19,11 @@ export const MenuList = [
 
 export const registerInfo = [
   {
-    title: "Login / SignUp",
-    url: "/LoginSignUp",
+    title: "Login",
+    url: "/Login",
+  },
+  {
+    title: "SignUp",
+    url: "/SignUp",
   },
 ];

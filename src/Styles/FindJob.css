@@ -1,0 +1,27 @@
+.fancySpan {
+  border-radius: 43% 57% 81% 19% / 80% 55% 45% 20%;
+}
+
+.contact label {
+  color: #ffffff;
+}
+.jobfetchClass {
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #3c009d;
+  --sb-size: 15px;
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+.jobfetchClass::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.jobfetchClass::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+.jobfetchClass::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+}
