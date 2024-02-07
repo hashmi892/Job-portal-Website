@@ -35,7 +35,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-mainColor w-full text-white max-xl:padding-x fixed z-50 top-0 ">
+    <div className="bg-mainColor w-full text-white max-xl:padding-x fixed z-[100] top-0 ">
       <nav className="flex justify-between items-center max-container ">
         <div className="logo">
           <a href="#">

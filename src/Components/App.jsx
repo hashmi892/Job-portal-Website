@@ -7,7 +7,8 @@ import ContactUs from "../Pages/ContactUs";
 import FindJobs from "../Pages/FindJobs";
 import Login from "../Pages/Login";
 import SignUp from "../Pages/SignUp";
-
+import UserProfile from "../Pages/UserProfile";
+import ProfileSetting from "../Pages/ProfileSetting";
 const App = () => {
   return (
     <div>
@@ -21,6 +22,8 @@ const App = () => {
             <Route exact path="/findJobs" Component={FindJobs} />
             <Route exact path="/Login" Component={Login} />
             <Route exact path="/Signup" Component={SignUp} />
+            <Route exact path="/UserProfile" Component={UserProfile} />
+            <Route exact path="/ProfileSetting" Component={ProfileSetting} />
           </Routes>
         </Router>
       </div>

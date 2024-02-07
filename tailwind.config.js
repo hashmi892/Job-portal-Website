@@ -23,6 +23,8 @@ export default {
         halfWhite: "#eaeaea",
         mainColor: "#3c009d",
         "slate-gray": "#797979",
+        lightgray: "#BCBCBC",
+        mediumLight: "#D9D9D9",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
       },
