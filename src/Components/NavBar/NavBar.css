@@ -9,3 +9,23 @@
   right: -100%;
   transition: all 0.5s ease-in-out;
 }
+
+.ProfileSettingHandler {
+  width: 250px;
+  position: absolute;
+  top: 67px;
+  right: -70px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(100%);
+  z-index: 10;
+}
+
+.profileHandler {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.profilePic {
+  z-index: 100;
+}

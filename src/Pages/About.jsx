@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineCheck } from "react-icons/ai";
 import AboutUsImg from "../assets/Images/AboutUsImg.jpg";
 import "../Styles/About.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
+  //  JS AOS library
+  useEffect(() => {
+    AOS.init({ delay: 500, duration: 1000 });
+  }, []);
   return (
     <div>
       <section className=" about max-container grid lg:grid-cols-2 grid-cols-1  mt-20 gap-14 padding-l padding-r padding-t padding-b  relative ">
-        <div className="max-lg:w-full">
+        <div className="max-lg:w-full" data-aos="fade-right">
           <img
             src={AboutUsImg}
             alt="AboutUs"
             className="object-cover w-full h-full rounded-xl shadow-lg z-30"
           />
         </div>
-        <div className=" lg:padding-r flex flex-col pt-5 max-lg:p-2 relative area ">
+        <div
+          className=" lg:padding-r flex flex-col pt-5 max-lg:p-2 relative area"
+          data-aos="fade-left"
+        >
           <h1 className="text-5xl font-montserrat font-bold text-mainColor leading-tight max-lg:mb-3 max-lg:text-3xl max-sm:text-2xl">
             We Help To Get The Best Job And Find A Talent
           </h1>

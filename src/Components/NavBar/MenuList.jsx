@@ -1,29 +1,29 @@
 export const MenuList = [
   {
     title: "Home",
-    url: "/",
+    url: "",
   },
   {
     title: "About Us",
-    url: "/About",
+    url: "aboutUs",
   },
   {
     title: "Contact Us",
-    url: "/Contact",
+    url: "contactUs",
   },
   {
     title: "Find Jobs",
-    url: "/findJobs",
+    url: "findJob",
   },
 ];
 
 export const registerInfo = [
   {
     title: "Login",
-    url: "/Login",
+    url: "login",
   },
   {
     title: "SignUp",
-    url: "/SignUp",
+    url: "signUp",
   },
 ];

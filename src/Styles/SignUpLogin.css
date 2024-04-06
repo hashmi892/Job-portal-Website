@@ -1,3 +1,7 @@
+.fancySpan {
+  border-radius: 43% 57% 81% 19% / 80% 55% 45% 20%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .child-div {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
