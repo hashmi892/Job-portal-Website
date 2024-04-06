@@ -47,7 +47,7 @@ const ContactUs = () => {
               <FaPhoneAlt />
             </div>
             <div>
-              <h3>+923135694970</h3>
+              <h3>+923125784971</h3>
             </div>
           </div>
         </div>
