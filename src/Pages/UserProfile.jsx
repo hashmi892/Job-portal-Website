@@ -1,11 +1,11 @@
-import React, { useState } from "react";
 import "../Styles/UserProfile.css";
 import { IoSettingsSharp } from "react-icons/io5";
 import { FaRegBookmark } from "react-icons/fa";
 import img from "../assets/Images/dummyPic.png";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 const UserProfile = () => {
-  const [profileImage, setProfileImage] = useState(img);
+  const [profileImage] = useState(img);
   const navigate = useNavigate();
   const handleSettingBnt = () => {
     navigate("/ProfileSetting");

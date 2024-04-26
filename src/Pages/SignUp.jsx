@@ -1,4 +1,3 @@
-import React from "react";
 import SignUpImg from "../assets/Images/SignUpImg.gif";
 import "../Styles/SignUpLogin.css";
 import LogoWhiteNobg from "../assets/Images/LogoWhiteNobg.png";

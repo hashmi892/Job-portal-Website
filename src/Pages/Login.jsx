@@ -1,4 +1,3 @@
-import React from "react";
 import LoginImg from "../assets/Images/LoginImg.gif";
 import LogoWhiteNobg from "../assets/Images/LogoWhiteNobg.png";
 import "../Styles/SignUpLogin.css";
@@ -67,7 +66,7 @@ const Login = () => {
                       />
                     </div>
                     <div>
-                      <label for="rememberMe">Remember Me</label>
+                      <label htmlFor="rememberMe">Remember Me</label>
                     </div>
                   </div>
                   <div>

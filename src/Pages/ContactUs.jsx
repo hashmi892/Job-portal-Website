@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { MdLocationOn } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -67,7 +67,7 @@ const ContactUs = () => {
           </div>
           <div className="max-ml:max-w-[100%]" data-aos="fade-left">
             <p className="text-[20px]">
-              Drop us a message; we're here to help you navigate your career
+              Drop us a message; we&#39;re here to help you navigate your career
               path smoothly.
             </p>
             <div className="mt-6 contact-form">

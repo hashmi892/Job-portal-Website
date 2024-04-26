@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../Styles/Home.css";
 import FindJobs from "./FindJobs";
 import About from "./About";
@@ -56,9 +56,9 @@ const Home = () => {
           </h1>
           <p className="mt-7 mb-4 font-sans text-[19px] max-md:text-[15px] text-justify tracking-wide">
             Welcome! Our website is a place where you can find lots of different
-            job options. Whether you're searching for a job or looking for the
-            right person to hire, our website makes it easy. Come and join us to
-            find many exciting job opportunities
+            job options. Whether you&#39;re searching for a job or looking for
+            the right person to hire, our website makes it easy. Come and join
+            us to find many exciting job opportunities
           </p>
         </div>
         <div

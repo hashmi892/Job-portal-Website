@@ -1,5 +1,5 @@
 // Import necessary libraries and components
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../Styles/FindJob.css";
 import JobCard from "../Components/JobCard/JobCard";
 import AOS from "aos";

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { AiOutlineCheck } from "react-icons/ai";
 import AboutUsImg from "../assets/Images/AboutUsImg.jpg";
 import "../Styles/About.css";
@@ -27,12 +27,12 @@ const About = () => {
             We Help To Get The Best Job And Find A Talent
           </h1>
           <p className="text-base font-palanquin text-slate-gray text-justify">
-            At our job portal, we're dedicated to connecting job seekers with
-            their dream careers and assisting employers in finding the perfect
-            candidates. With a passionate team and innovative technology, we're
-            here to help you take the next step in your career journey. Join us
-            and let's create a brighter future together. Your success is our
-            mission
+            At our job portal, we&#39;re dedicated to connecting job seekers
+            with their dream careers and assisting employers in finding the
+            perfect candidates. With a passionate team and innovative
+            technology, we&#39;re here to help you take the next step in your
+            career journey. Join us and let&#39;s create a brighter future
+            together. Your success is our mission
           </p>
           <div className="mt-1">
             <div className="mt-3 flex justify-start items-center gap-2.5">

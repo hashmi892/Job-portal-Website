@@ -1,7 +1,5 @@
-import React from "react";
 import "../Styles/UserProfile.css";
 import { FiEdit } from "react-icons/fi";
-import { FaCircleUser } from "react-icons/fa6";
 import profilePic from "../assets/Images/dummyPic.png";
 import "../Styles/ProfileSetting.css";
 const ProfileSetting = () => {
@@ -22,7 +20,7 @@ const ProfileSetting = () => {
                 type="text"
                 className="w-[80%] max-xsm:text-[15px] text-center  border-t-none border-s-none border-e-none  focus:border-t-none focus:border-s-none focus:border-e-none focus:border-b-[1px] focus:outline-none py-1.5  bg-transparent text-white"
                 placeholder="Briefly describe yourself (max 50 characters)"
-                maxlength="50"
+                maxLength="50"
               />
             </div>
           </div>
@@ -70,13 +68,13 @@ const ProfileSetting = () => {
               </div>
             </div>
           </div>
-          <div className="ProfileBtn flex gap-3 tracking-wide justify-between max-xsm:flex-col">
-            <button
+          <div className="ProfileBtn  tracking-wide  max-xsm:flex-col">
+            {/* <button
               type="button"
               className="bg-mainColor text-white px-3 py-2 rounded-xl"
             >
               Upload Resume
-            </button>
+            </button> */}
             <button
               type="button"
               className="bg-mediumLight text-[#FF0D0D] px-3 py-2 rounded-xl"

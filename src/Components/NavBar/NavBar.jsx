@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsX } from "react-icons/bs"; // Import the correct 'X' icon
 import LogoWhiteNobg from "../../assets/Images/LogoWhiteNobg.png";
