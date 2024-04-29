@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./JobCard.css";
 
-const JobCard = ({ filterData, filterType }) => {
+const JobCard = ({ filterData }) => {
   const [isSaved, setIsSaved] = useState(false);
 
-  const handleChange = (e) => {
-    if (e.target.checked) {
-      console.log("✅ Job is Saved");
-    } else {
-      console.log("⛔️ Job is NOT Saved");
-    }
+  const handleChange = () => {
+    // if (e.target.checked) {
+    //   console.log("✅ Job is Saved");
+    // } else {
+    //   console.log("⛔️ Job is NOT Saved");
+    // }
     setIsSaved((current) => !current);
   };
   // Render job cards based on filterData and filterType
@@ -33,18 +33,10 @@ const JobCard = ({ filterData, filterType }) => {
           <div className="JobTitle">
             <h1 className="font-bold text-xl">
               {/* Display job type based on filterType */}
-              Job {filterType}:
+              Job Title:
               <span className="text-mainColor tracking-wide">
                 {" "}
-                {filterType === "Title"
-                  ? element.title
-                  : filterType === "Location"
-                  ? element.location
-                  : filterType === "Id"
-                  ? element.id
-                  : filterType === "Salary"
-                  ? element.salary
-                  : ""}
+                {element.title}
               </span>
             </h1>
           </div>
@@ -98,6 +90,7 @@ const JobCard = ({ filterData, filterType }) => {
                 {element.date}
               </h3>
             </div>
+            {/* Bookmark  */}
             <label className="ui-bookmark">
               <input
                 type="checkbox"

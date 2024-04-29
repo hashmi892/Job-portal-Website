@@ -11,7 +11,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+/* For custom scrollBar */
 body {
   overflow-x: hidden;
   --sb-track-color: #ffffff;
@@ -88,5 +88,8 @@ body::-webkit-scrollbar-thumb {
   }
   .purpleBgBtn {
     @apply text-white bg-mainColor w-24 h-10 max-Xs:w-full rounded-full flex justify-center items-center font-semibold  cursor-pointer;
+  }
+  .menuIconStyle {
+    @apply flex items-center gap-14 max-lg:text-[15px] max-ml:flex-col max-ml:items-center max-ml:justify-center max-ml:absolute max-ml:right-0 max-ml:top-[70px] max-ml:w-full  max-ml:pb-20 max-ml:gap-5;
   }
 }

@@ -84,7 +84,9 @@ const Login = () => {
                   </button>
                   <button
                     type="button"
-                    onClick={signUp}
+                    onClick={(e) => {
+                      signUp(e);
+                    }}
                     className="btn bg-BtnBg1 hover:bg-mainColor text-white  rounded-lg tracking-wide"
                   >
                     SignUp

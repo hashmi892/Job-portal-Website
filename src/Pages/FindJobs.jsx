@@ -39,11 +39,9 @@ const FindJobs = () => {
   }, []);
   // Function to handle title filter
   const HandleTitleFilter = (value) => {
-    // console.log(value);
     let filtertitles = data.filter((item) => {
       return item.title === value;
     });
-    // console.log(filtertitles);
     setFilterTitle(filtertitles);
     setfilterLocation([]);
     setfilterId([]);
@@ -56,19 +54,13 @@ const FindJobs = () => {
     setLocaInfo("");
     setJobSalary("");
     setJobId("");
-    // setJobInfo("");
   };
-  // UseEffect hook to log filterTitle changes
-  // useEffect(() => {
-  //   console.log(filterTitle);
-  // }, [filterTitle]);
   // Function to handle location filter
   const HandleLocationFilter = (value) => {
-    // console.log(value);
     let filterLocations = data.filter((item) => {
       return item.location === value;
     });
-    // console.log(filterLocations);
+
     setFilterTitle([]);
     setfilterLocation(filterLocations);
     setfilterId([]);
@@ -78,22 +70,16 @@ const FindJobs = () => {
     setIdOption(false);
     setJobSalary(false);
     setHandleFilterOption(false);
-    // setLocaInfo("");
     setJobSalary("");
     setJobId("");
     setJobInfo("");
   };
-  // UseEffect hook to log filterLocation changes
-  // useEffect(() => {
-  //   console.log(filterLocation);
-  // }, [filterLocation]);
+
   // Function to handle ID filter
   const HandleIdFilter = (value) => {
-    // console.log(value);
     let filterIds = data.filter((item) => {
       return item.id === value;
     });
-    // console.log(filterIds);
     setFilterTitle([]);
     setfilterLocation([]);
     setfilterId(filterIds);
@@ -108,17 +94,11 @@ const FindJobs = () => {
     // setJobId("");
     setJobInfo("");
   };
-  // UseEffect hook to log filterId changes
-  // useEffect(() => {
-  //   console.log(filterId);
-  // }, [filterId]);
   // Function to handle salary filter
   const HandleSalaryFilter = (value) => {
-    // console.log(value);
     let filterSalaries = data.filter((item) => {
       return item.salary === value;
     });
-    // console.log(filterSalaries);
     setFilterTitle([]);
     setfilterLocation([]);
     setfilterId([]);
@@ -129,14 +109,9 @@ const FindJobs = () => {
     setSalaryOption(true);
     setHandleFilterOption(false);
     setLocaInfo("");
-    // setJobSalary("");
     setJobId("");
     setJobInfo("");
   };
-  // UseEffect hook to log filterSalary changes
-  // useEffect(() => {
-  //   console.log(filterSalary);
-  // }, [filterSalary]);
   // Handle filter button click
   const hanldeFilters = () => {
     setHandleFilterOption(true);
@@ -148,18 +123,22 @@ const FindJobs = () => {
   // Render the component
   return (
     <div className="contact relative top-[70px] min-h-[400px] bg-mainColor padding-y">
-      <div>
-        <h1 className="text-center text-white text-5xl font-bold tracking-wide max-xsm:text-2xl ">
+      <div className="my-2">
+        {/*########### Page Title ############*/}
+        <h1 className="text-center text-white text-5xl font-bold tracking-wide max-xsm:text-2xl my-3">
           Search
           <span className="ms-4 fancySpan bg-white text-mainColor p-6 font-bold inline-block">
             Jobs
           </span>
         </h1>
+        {/*############## Filters Section Start #################### */}
         <div className="mainDiv py-12 px-4 flex justify-center max-container">
           <div className="InputSec">
             <form action="" className="flex flex-col gap-8">
               <div className="flex items-center justify-between gap-36 max-sm:gap-5 max-xms:flex-col">
-                <div className="flex flex-col gap-1" data-aos="fade-right">
+                {/*########### Left section start ############*/}
+                {/*########### Job Title Section ############*/}
+                <div className="flex flex-col gap-1 p-2" data-aos="fade-right">
                   <label
                     htmlFor="jobSearch"
                     className=" fancySpan bg-white text-mainColor p-6 font-bold inline-block text-3xl"
@@ -178,6 +157,7 @@ const FindJobs = () => {
                       }}
                     >
                       <option value=""></option>
+                      {/* Set { "Title 1", "Title 2" } */}
                       {[...new Set(data.map((item) => item.title))].map(
                         (title) => (
                           <option key={title} value={title} className="option">
@@ -188,15 +168,19 @@ const FindJobs = () => {
                     </select>
                   </div>
                 </div>
-
-                <div className="flex flex-col gap-3" data-aos="fade-left">
+                {/*########### Left section End ############*/}
+                {/*########### Right section Start ############*/}
+                <div className="flex flex-col gap-3  p-2" data-aos="fade-left">
+                  {/*######## Filter Title Heading #########*/}
                   <div className="">
                     <p className=" fancySpan bg-white text-mainColor p-6 font-bold block text-3xl text-center my-4">
                       Filters
                     </p>
                   </div>
+                  {/* ###### Filters ########## */}
                   <div className="flex flex-col gap-3">
                     <div className="flex justify-between gap-5 max-ms:flex-col max-ms:gap-2">
+                      {/* Job Location Filter */}
                       <div className="flex flex-col gap-1">
                         <label
                           htmlFor="jobLocation"
@@ -224,7 +208,7 @@ const FindJobs = () => {
                           )}
                         </select>
                       </div>
-
+                      {/*########### Job Id Filter ############*/}
                       <div className="flex flex-col gap-1">
                         <label
                           htmlFor="JobId"
@@ -251,10 +235,11 @@ const FindJobs = () => {
                         </select>
                       </div>
                     </div>
+                    {/* ############ Job Salary Filter ############# */}
                     <div className="flex justify-between gap-5 max-ms:flex-col max-ms:gap-2">
                       <div className="flex flex-col gap-1">
                         <label
-                          htmlFor="jobLocation"
+                          htmlFor="JobSalary"
                           className=" fancySpan bg-white text-mainColor p-6 font-bold inline-block text-3xl"
                         >
                           Job Salary
@@ -282,7 +267,9 @@ const FindJobs = () => {
                     </div>
                   </div>
                 </div>
+                {/*########### Right section End ############*/}
               </div>
+              {/* ############## Filter Button ############### */}
               <button
                 className="bg-BtnBg1 text-white py-4 rounded-full font-bold font-montserrat hover:bg-transparent border border-BtnBg1 hover:border-white btn-transition shadow-3xl"
                 type="button"
@@ -296,36 +283,21 @@ const FindJobs = () => {
           </div>
         </div>
       </div>
+      {/*############## Filters Section End #################### */}
+      {/*######### Job Display Section Start ######## */}
       <div className="jobfetchClass max-container max-h-[700px] overflow-y-auto">
         {handleFilterOptions && (
           <>
-            {TitleOption && (
-              <JobCard
-                key="title"
-                filterData={filterTitle}
-                filterType="Title"
-              />
-            )}
+            {TitleOption && <JobCard key="title" filterData={filterTitle} />}
             {LocationOption && (
-              <JobCard
-                key="location"
-                filterData={filterLocation}
-                filterType="Location"
-              />
+              <JobCard key="location" filterData={filterLocation} />
             )}
-            {IdOption && (
-              <JobCard key="id" filterData={filterId} filterType="Id" />
-            )}
-            {SalaryOption && (
-              <JobCard
-                key="salary"
-                filterData={filterSalary}
-                filterType="Salary"
-              />
-            )}
+            {IdOption && <JobCard key="id" filterData={filterId} />}
+            {SalaryOption && <JobCard key="salary" filterData={filterSalary} />}
           </>
         )}
       </div>
+      {/*######### Job Display Section End ######## */}
     </div>
   );
 };

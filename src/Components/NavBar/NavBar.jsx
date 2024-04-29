@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { BsX } from "react-icons/bs"; // Import the correct 'X' icon
+import { BsX } from "react-icons/bs";
 import LogoWhiteNobg from "../../assets/Images/LogoWhiteNobg.png";
 import { MenuList, registerInfo } from "./MenuList";
 import "./NavBar.css";
@@ -64,7 +64,6 @@ const NavBar = () => {
           </NavLink>
         </div>
         <div onClick={handleClick} className="cursor-pointer ">
-          {/* Corrected the icons */}
           {menuIcon ? (
             <BsX className="ml:hidden text-5xl max-Xs:text-4xl " />
           ) : (
@@ -73,9 +72,7 @@ const NavBar = () => {
         </div>
         <div
           className={
-            menuIcon
-              ? "flex items-center gap-14 max-lg:text-[15px] max-ml:flex-col max-ml:items-center max-ml:justify-center max-ml:absolute max-ml:right-0 max-ml:top-[70px] max-ml:w-full  max-ml:pb-20 max-ml:gap-5 menuList"
-              : "flex items-center gap-14 max-lg:text-[15px] max-ml:flex-col max-ml:items-center max-ml:justify-center max-ml:absolute max-ml:right-0 max-ml:top-[70px] max-ml:w-full  max-ml:pb-20 max-ml:gap-5 menuList close"
+            menuIcon ? "menuList menuIconStyle" : "menuList menuIconStyle close"
           }
         >
           <ul className="flex items-center justify-between gap-7 max-ml:flex-col tracking-wider font-medium text-xl">

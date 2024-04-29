@@ -30,7 +30,7 @@ const Home = () => {
 
   const bgImageStyle = {
     backgroundImage: `url(${imageSlide[currentState].url})`,
-    transition: "background-image 0.5s ease-in-out", // Add transition effect
+    transition: "background-image 0.5s ease-in-out",
   };
 
   return (
