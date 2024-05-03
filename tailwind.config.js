@@ -22,11 +22,13 @@ export default {
         mediumBlack: "#1c2331",
         halfWhite: "#eaeaea",
         mainColor: "#3c009d",
+        // mainColor: "#60cfa5",
         "slate-gray": "#797979",
         lightgray: "#BCBCBC",
         mediumLight: "#D9D9D9",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
+        lightBlue: "rgb(204, 204, 255)",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.5)",

@@ -6,11 +6,12 @@ import { MenuList, registerInfo } from "./MenuList";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import img from "../../assets/Images/dummyPic.png";
-import UserProfile from "../../Pages/UserProfile";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 const NavBar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
+  const navigate = useNavigate();
 
   const menuList = MenuList.map(({ title, url }) => (
     <li key={title}>
@@ -44,15 +45,14 @@ const NavBar = () => {
   };
 
   const handleProfilePic = () => {
-    const profileHandle = document.querySelector(".ProfileSettingHandler");
-    profileHandle.classList.toggle("profileHandler");
+    navigate("/userdashboard");
   };
   //  JS AOS library
   useEffect(() => {
     AOS.init({ delay: 2000, duration: 2000 });
   }, []);
   return (
-    <div className="bg-mainColor w-full text-white max-xl:padding-x fixed z-[100] top-0 py-1 ">
+    <div className="bg-mainColor w-full text-white max-xl:padding-x fixed z-[100] top-0 py-1 shadowBox">
       <nav className="flex justify-between items-center max-container">
         <div className="logo">
           <NavLink to="" onClick={handleLogoClick}>
@@ -87,16 +87,13 @@ const NavBar = () => {
             onClick={() => {
               handleProfilePic();
             }}
-            className="cursor-pointer profilePic relative "
+            className="cursor-pointer "
           >
             <img
               src={img}
               alt="ProfilePic"
               className="w-[45px] h-[45px] rounded-full"
             />
-            <div className="ProfileSettingHandler max-ml:top-[-300px] max-ml:left-[100px] text-black max-ml:max-w-[180px] max-xms:left-[-70px] max-xms:top-[-320px] ">
-              <UserProfile />
-            </div>
           </div>
         </div>
       </nav>

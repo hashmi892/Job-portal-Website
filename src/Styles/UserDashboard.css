@@ -1,0 +1,93 @@
+.dashboard .card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Jobstable tr {
+  text-align: center;
+}
+.Jobstable td,
+.Jobstable th {
+  padding: 5px 3px;
+}
+.Jobstable thead {
+  background-color: #3c009d;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.Jobstable .tbody tr:nth-child(even) {
+  background-color: #dee2e6;
+}
+/* left section */
+.leftSec {
+  width: 20%;
+  font-size: 22px;
+}
+.rightSec {
+  width: 80%;
+}
+@media only screen and (max-width: 825px) {
+  .leftSec {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .leftSec {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 562px) {
+  .leftSec {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 463px) {
+  .leftSec {
+    width: 35%;
+  }
+  .rightSec {
+    width: 65%;
+  }
+}
+/* right section css */
+.upCard {
+  width: 130px;
+  justify-content: space-between;
+}
+.upCard span {
+  font-size: 20px;
+}
+.upCard p {
+  font-size: 12px;
+}
+@media only screen and (max-width: 743px) {
+  .upCard {
+    width: 100px;
+  }
+  .upCard span {
+    font-size: 14px;
+  }
+  .upCard p {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 373px) {
+  .upCard {
+    width: 100%;
+  }
+  .upCard span {
+    font-size: 20px;
+  }
+  .upCard p {
+    font-size: 14px;
+  }
+}
+/* table button */
+@media only screen and (max-width: 541px) {
+  .tableTopParent {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .buttonParent {
+    flex-direction: column;
+    width: 100%;
+  }
+}

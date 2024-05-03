@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../Styles/Home.css";
-import FindJobs from "./FindJobs";
+// import FindJobs from "./FindJobs";
 import About from "./About";
 import ContactUs from "./ContactUs";
 import imageSlide from "./HomeBgData";
@@ -8,6 +8,8 @@ import Typed from "react-typed";
 import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Jobs from "./Jobs";
+import FindJobs from "./FindJobs";
 
 const Home = () => {
   const [currentState, setCurrentState] = useState(0);
@@ -32,7 +34,6 @@ const Home = () => {
     backgroundImage: `url(${imageSlide[currentState].url})`,
     transition: "background-image 0.5s ease-in-out",
   };
-
   return (
     <>
       <div
@@ -74,8 +75,9 @@ const Home = () => {
           <HiOutlineChevronRight />
         </div>
       </div>
-      <FindJobs />
+      <Jobs />
       <About />
+      <FindJobs />
       <ContactUs />
     </>
   );
