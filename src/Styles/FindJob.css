@@ -1,7 +1,9 @@
 .fancySpan {
   border-radius: 43% 57% 81% 19% / 80% 55% 45% 20%;
 }
-
+.contact {
+  border-bottom: 1px solid white;
+}
 .contact label {
   margin: 10px auto;
   width: fit-content;

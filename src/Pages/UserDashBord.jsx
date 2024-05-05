@@ -64,16 +64,36 @@ const UserDashBord = () => {
           <span className="p-1 ">Dashboard</span>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 p-3 ">
-          <h1 className="cursor-pointer">Privacy</h1>
+          <h1
+            className="cursor-pointer"
+            onClick={() => {
+              navigate("/privacy");
+            }}
+          >
+            Privacy Policy
+          </h1>
           <div className="flex items-center gap-2  cursor-pointer">
             <CgProfile />
             <h1 onClick={() => handleSettingBnt()}> Profile</h1>
           </div>
           <div className="text-center flex  items-center cursor-pointer gap-2">
             <FaRegBookmark />
-            <h1>Saved Jobs</h1>
+            <h1
+              onClick={() => {
+                navigate("/savejob");
+              }}
+            >
+              Saved Jobs
+            </h1>
           </div>
-          <h1 className="text-center cursor-pointer">Terms And Condition</h1>
+          <h1
+            className="text-center cursor-pointer"
+            onClick={() => {
+              navigate("/termAndCondition");
+            }}
+          >
+            Terms And Condition
+          </h1>
           <button type="button" className="flex gap-2 items-center ">
             <RiLogoutCircleLine />
             Log out

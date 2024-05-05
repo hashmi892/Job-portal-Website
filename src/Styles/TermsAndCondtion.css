@@ -1,0 +1,20 @@
+.borderBottomClass {
+  border-bottom: 1px solid #fff;
+}
+.term h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+.term h1:first-child {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 20px auto;
+}
+.term p {
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 18px;
+}

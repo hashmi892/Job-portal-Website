@@ -14,7 +14,7 @@ const JobCard = ({ filterData }) => {
   };
   // Render job cards based on filterData and filterType
   return (
-    <div className="flex justify-center items-center flex-wrap gap-20">
+    <div className="flex justify-center items-start flex-wrap gap-20 p-7">
       {/* Map through filterData to render individual job cards */}
       {filterData?.map((element, index) => (
         <div

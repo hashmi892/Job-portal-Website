@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Jobs from "./Jobs";
 import FindJobs from "./FindJobs";
+import PostJobs from "./PostJobs";
 
 const Home = () => {
   const [currentState, setCurrentState] = useState(0);
@@ -78,6 +79,7 @@ const Home = () => {
       <Jobs />
       <About />
       <FindJobs />
+      <PostJobs />
       <ContactUs />
     </>
   );

@@ -4,6 +4,7 @@ import "../Styles/SignUpLogin.css";
 import { MdEmail } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
 import { useNavigate, NavLink } from "react-router-dom";
+import { IoMdPerson } from "react-icons/io";
 const Login = () => {
   const navigate = useNavigate();
   const signUp = (e) => {
@@ -36,6 +37,10 @@ const Login = () => {
                 method="post"
                 className="signUpForm flex flex-col gap-7 max-ms:self-start"
               >
+                <div className="inputFieldwrap">
+                  <IoMdPerson className="text-[13px]" />
+                  <input type="text" name="username" placeholder="Username" />
+                </div>
                 <div className="inputFieldwrap">
                   <MdEmail className="text-[13px]" />
                   <input
@@ -70,9 +75,9 @@ const Login = () => {
                     </div>
                   </div>
                   <div>
-                    <a href="#" className="text-mainColor">
+                    <NavLink to="/ForgotPassword" className="text-mainColor">
                       Forgot password?
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
                 <div className="flex gap-5 max-xsm:flex-col">

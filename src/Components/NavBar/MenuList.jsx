@@ -8,12 +8,16 @@ export const MenuList = [
     url: "aboutUs",
   },
   {
-    title: "Contact Us",
-    url: "contactUs",
-  },
-  {
     title: "Find Jobs",
     url: "findJob",
+  },
+  {
+    title: "Post Job",
+    url: "PostJob",
+  },
+  {
+    title: "Contact Us",
+    url: "contactUs",
   },
 ];
 
