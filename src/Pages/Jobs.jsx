@@ -4,23 +4,13 @@ import "../Styles/Jobs.css";
 const Jobs = () => {
   const [data, setData] = useState();
   const fetchJobs = async () => {
-    const url =
-      "https://jsearch.p.rapidapi.com/search?query=Python%20developer%20in%20Texas%2C%20USA&page=4&num_pages=2";
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "15e80f21e9msh9b1cd4be4816a1ep16ea33jsn2f228a3d097b",
-        "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
-      },
-    };
-
-    try {
-      const response = await fetch(url, options);
-      const result = await response.json();
-      setData(result.data);
-    } catch (error) {
-      console.error(error);
-    }
+    // try {
+    //   const response = await fetch(url, options);
+    //   const result = await response.json();
+    //   setData(result.data);
+    // } catch (error) {
+    //   console.error(error);
+    // }
   };
   return (
     <div className="contact relative top-[70px] min-h-[400px] bg-mainColor padding-y flex flex-col justify-center items-center gap-9 border border-b-white border-s-transparent border-e-transparent border-t-transparent">
